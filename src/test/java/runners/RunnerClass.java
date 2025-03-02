@@ -15,9 +15,9 @@ import org.junit.runner.RunWith;
 
         dryRun = false,
 
-        plugin = {"pretty"},
-
-    
+        plugin = {"pretty",
+        "json:target/cucumber.json",  // ✅ Generates JSON report
+        "html:target/cucumber-reports.html"},
 
         tags = ""
 
